@@ -70,6 +70,14 @@ address {
     color: var(--pressed-state);
 }
 
+.link:hover .logo-studio {
+    color: var(--pressed-state);
+}
+
+.link:focus .logo-studio {
+    color: var(--pressed-state);
+}
+
 /* ----------------HEADER-------------- */
 .header {
     border-bottom: 1px solid var(--accent);
@@ -450,6 +458,14 @@ address {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+}
+
+.link:hover .footer-logo-studio {
+    color: var(--pressed-state);
+}
+
+.link:focus .footer-logo-studio {
+    color: var(--pressed-state);
 }
 
 .footer-text {
