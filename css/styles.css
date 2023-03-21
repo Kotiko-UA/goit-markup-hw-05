@@ -588,6 +588,10 @@ address {
 
 }
 
+.port-link {
+    display: block;
+}
+
 .port-wrap-overlay {
     position: relative;
     overflow: hidden;
@@ -613,13 +617,13 @@ address {
 
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus {
+.port-link:hover,
+.port-link:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-item:hover .port-overlay-text,
-.portfolio-item:focus .port-overlay-text {
+.port-link:hover .port-overlay-text,
+.port-link:focus .port-overlay-text {
     transform: translateX(0);
 }
 
