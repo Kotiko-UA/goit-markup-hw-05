@@ -590,16 +590,16 @@ address {
 
 .port-wrap-overlay {
     position: relative;
-
+    overflow: hidden;
 
 }
 
 .port-overlay-text {
-    display: none;
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
+    transform: translateY(-100%);
 
     padding-top: 40px;
     padding-left: 32px;
@@ -618,8 +618,9 @@ address {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-item:hover .port-overlay-text {
-    display: block;
+.portfolio-item:hover .port-overlay-text,
+.portfolio-item:focus .port-overlay-text {
+    transform: translateX(0);
 }
 
 
