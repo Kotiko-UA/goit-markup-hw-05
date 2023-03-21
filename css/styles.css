@@ -123,15 +123,28 @@ address {
 }
 
 .nav-item-link {
-    display: block;
+    position: relative;
+    display: flex;
+    flex-direction: column;
     padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 20px;
 
     color: var(--title-dark);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
 
+}
+
+.active.nav-item-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+
+    border: 2px solid var(--pressed-state);
+    border-radius: 2px;
 }
 
 /* /* ----------------------adress------------------ */
@@ -575,13 +588,43 @@ address {
 
 }
 
+.port-wrap-overlay {
+    position: relative;
+
+
+}
+
+.port-overlay-text {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    color: var(--light);
+    background-color: var(--primary-brand);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+}
+
 .portfolio-item:hover,
 .portfolio-item:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.port-link {
+.portfolio-item:hover .port-overlay-text {
     display: block;
+}
+
+
+.port-link {
+    /* display: block; */
 
 }
 
