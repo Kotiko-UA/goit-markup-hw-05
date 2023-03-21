@@ -57,13 +57,15 @@ address {
 }
 
 .list {
-    list-style: none !important;
+    list-style: none;
 }
 
 .link {
     text-decoration: none;
     font-style: normal;
-    transition: var(--tranform);
+    transition: color var(--tranform);
+
+
 }
 
 .link:hover,
@@ -210,7 +212,7 @@ address {
     padding: 16px 32px;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    transition: var(--tranform);
+    transition: background-color var(--tranform);
 
     font-family: 'Roboto', sans-serif;
     background: var(--primary-brand);
@@ -226,7 +228,6 @@ address {
 
 .button:hover,
 .button:focus {
-    color: var(--light);
     background-color: var(--pressed-state);
 }
 
@@ -370,6 +371,7 @@ address {
     background-color: var(--primary-brand);
     border-radius: 50%;
     display: block;
+    transition: background-color var(--tranform);
 
 }
 
@@ -412,7 +414,7 @@ address {
 }
 
 .customers-link {
-    transition: var(--tranform);
+    transition: border var(--tranform), border-radius var(--tranform);
     height: 88px;
     padding: 16px;
     display: block;
@@ -558,7 +560,7 @@ address {
 
 .portbutton {
     padding: 12px 24px;
-    transition: var(--tranform);
+    transition: color var(--tranform), background-color var(--tranform), box-shadow var(--tranform);
 
     font-family: 'Roboto', sans-serif;
     font-style: inherit;
@@ -595,6 +597,8 @@ address {
 
 .port-link {
     display: block;
+
+    transition: box-shadow var(--tranform);
 }
 
 .port-link:hover,
@@ -613,7 +617,7 @@ address {
     left: 0;
     height: 100%;
     transform: translateY(100%);
-    transition: var(--tranform);
+    transition: transform var(--tranform);
 
     padding-top: 40px;
     padding-left: 32px;
