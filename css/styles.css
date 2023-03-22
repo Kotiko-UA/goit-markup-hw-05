@@ -130,7 +130,7 @@ address {
     display: flex;
     flex-direction: column;
     padding-top: 24px;
-    padding-bottom: 20px;
+    padding-bottom: 24px;
 
     color: var(--title-dark);
     font-weight: 500;
